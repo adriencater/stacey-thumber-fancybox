@@ -1,6 +1,6 @@
 {% for image in page.images %}
   <div class="image">
-    <img src="{{ image.url }}" alt="{{ image.title }}" width="{{ image.width }}" height="{{ image.height }}">
+    <img src="thumber.php?img={{ image.url }}&w=540" alt="{{ image.title }}">
     {% if image.description %}
       <em>{{ image.description }}</em>
     {% endif %}
